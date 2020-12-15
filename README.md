@@ -39,22 +39,34 @@ Python script was used to visualize the weather of 500+ cities across the world 
 A first set of scatter plots to presenting the following relationships:
 
 * Temperature (F) vs. Latitude
+  File name: scatterLvT
 * Humidity (%) vs. Latitude
+  File name: scatterLvH
 * Cloudiness (%) vs. Latitude
+  File name: scatterLvC
 * Wind Speed (mph) vs. Latitude
+  File name: scatterLvWS
 
 After each plot, information describing the plots was presented and then used to compose overall obersations.
 
 Separate datasets were then created for the Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude) and used to present information similar to the first series of scatter plots.  Linear regression on each relationship was also completed with Pearson's coefficient to identify the fit. 
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+  File name: scatternhLvTlr
 * Southern Hemisphere - Temperature (F) vs. Latitude
+  File name: scattershLvTlr
 * Northern Hemisphere - Humidity (%) vs. Latitude
+  File name: scatternhLvTlr
 * Southern Hemisphere - Humidity (%) vs. Latitude
+  File name: scattershLvTlr
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+  File name: scatternhLvTlr
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+  File name: scattershLvTlr
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+  File name: scatternhLvTlr
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+  File name: scattershLvTlr
 
 After each plot, information describing the plots was presented and then used to compose overall obersations.
 
@@ -70,6 +82,7 @@ The final notebook contains:
 To complete this part, the csv file of cities was imported for Part I - WeatherPy.
 
 A heatmap was created displaying the humidity for every city from Part I.
+File name : VacationPy/Images/Humidity Heat Map
 
 Then, the data was filtered using the follwoing criteria to generate a list of potenital vaction locaitons.
 
@@ -81,22 +94,26 @@ Then, the data was filtered using the follwoing criteria to generate a list of p
   
   The locations selected were:
   
+  * Lebu, Chile  
   * Cape, Chile
-  * Talcahuano, Chile
-  * Lebu, Chile
-  * Valparaiso, Chile
-  * Coihueco, Chile
+  * Constitucion, Chile
   * Ancud, Chile
+  * Coyhaique, Chile
+  * Coihueco, Chile
+
   
  Then, Google Places API was used to find the first hotel for each city located within 10000 meters of the coordinates of the heat locations.
  Had to move search out to 10000 meters to find hotel for Coihueco, Chile.
  
-  * Cape, Chile, Hotel : Hotel Molino Viejo
-  * Talcahuano, Chile, Hotel : Holiday Inn Express Concepcion
-  * Lebu, Chile, Hotel : Konui Hotel - Lodge
-  * Valparaiso, Chile, Hotel : La Blanca Hotel
-  * Coihueco, Chile, Hotel : Cabanas Don Yito
+ File name : VacationPy/Images/Hotel Map
+ 
+  * Lebu, Chile, : Konui Hotel - Lodge
+  * Cape, Chile,  : Hotel Molino Viejo
+  * Constitucion, Chile, Hotel : Bed & Breakfast Sweet Dreams
   * Ancud, Chile, Hotel : Panamericana Hotel Ancud
+  * Coyhaique, Chile, Hotel Hotel Dreams de la Patatgonia
+  * Coihueco, Chile, Hotel : Aqualipso Agroturismo
+ 
 
 The hotels were then layered on top of the humidity heatmap with a label containing the **Name**, **City**, and **Country**.
-
+File name : VacationPy/Images/Hotel Humidity Heat Map
