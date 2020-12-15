@@ -4,6 +4,10 @@ placed and cleaning up to get credit for "repo pushes" would
 have created an artificially high number of pushes and would 
 have taken more than time than just doing it right.
 
+api keys have been removed
+
+Files are folder labeled 20201216_HW_TDY
+
 API homework
 # Python API Homework - What's the Weather Like?
 
